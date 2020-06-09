@@ -9,7 +9,12 @@ int main()
 	dir = CreateDirectory("G:\\fav\\C_WORKPLACE\\DirBySysProg", NULL);
 	if(dir == false)
 		cout<<"Dir creation failed";
-	cout<<"Created";
+	cout<<"Created"<<endl;
+	getchar();
+	dir = RemoveDirectory("G:\\fav\\C_WORKPLACE\\DirBySysProg");
+	if(dir == false)
+		cout<<"Dir removal failed";
+	cout<<"Deleted"<<endl;
 	system("PAUSE");
 	return 0;
 }
